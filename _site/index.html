@@ -9,6 +9,7 @@
     <title>Standards.REST</title>
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/site.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -16,7 +17,7 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Standards.REST</h1>
-        <p class="lead text-muted">A collection of standards and specifications, that help make fantastic HTTP/REST
+        <p class="lead">A collection of standards and specifications, that help make fantastic HTTP/REST
         APIs. Don't reinvent the wheel, use fantastic wheels, hashed out by experts,
         that solve problems you hadn't even considered yet.</p>
         <p>
@@ -28,11 +29,38 @@
 
     <section class="content">
       <div class="container">
-        <ul>
+        <table class="table">
+          <thead class="thead-inverse">
+            <tr>
+              <th>Standard</th>
+              <th>Body</th>
+              <th>Reference</th>
+              <th>Status</th>
+            </tr>
+          </thead>
         
-          <li><a href="bar">bar</li>
+          <tr>
+            <td><a href="https://inadarei.github.io/rfc-healthcheck/">Health Check Response Format</td>
+            <td>NWG</td>
+            <td><em>n/a</em></td>
+            <td>draft</td>
+          </tr>
         
-        <ul>
+          <tr>
+            <td><a href="https://tools.ietf.org/html/rfc7396">JSON Merge Patch</td>
+            <td>IETF</td>
+            <td>RFC7396</td>
+            <td>proposed</td>
+          </tr>
+        
+          <tr>
+            <td><a href="https://tools.ietf.org/html/rfc7807">Problem Details for HTTP APIs</td>
+            <td>IETF</td>
+            <td>rfc7807</td>
+            <td>proposed</td>
+          </tr>
+        
+        </table>
       </div>
     </section>
 

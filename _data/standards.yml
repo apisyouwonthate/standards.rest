@@ -1,2 +1,28 @@
-- name: Foo
-  url: bar
+
+
+- name: Health Check Response Format
+  url: https://inadarei.github.io/rfc-healthcheck/
+  body: NWG
+  status: draft
+  version: draft-inadarei-api-health-check-00
+
+- name: JSON Merge Patch
+  ref: RFC7396
+  url: https://tools.ietf.org/html/rfc7396
+  body: IETF
+  status: proposed
+  abstract: |
+    This specification defines the JSON merge patch format and processing
+    rules.  The merge patch format is primarily intended for use with the
+    HTTP PATCH method as a means of describing a set of modifications to
+    a target resource's content.
+
+- name: Problem Details for HTTP APIs
+  ref: rfc7807
+  url: https://tools.ietf.org/html/rfc7807
+  body: IETF
+  status: proposed
+  abstract: |
+    This document defines a "problem detail" as a way to carry machine-
+    readable details of errors in a HTTP response to avoid the need to
+    define new error response formats for HTTP APIs.

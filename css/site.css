@@ -16,7 +16,8 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #89709B;
+  color: #fff;
 }
 
 .jumbotron p:last-child {
@@ -24,6 +25,7 @@ body {
 }
 
 .jumbotron-heading {
+  font-family: "Arvo",serif;
   font-weight: 300;
 }
 
@@ -35,6 +37,18 @@ body {
   background-color: #f7f7f7;
   padding-bottom: 3rem;
   padding-top: 3rem;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:hover {
+  background-color: #4c844e;
+  border: 0;
+  color: #fff;
+}
+
+.btn-secondary, .btn-secondary:active, .btn-secondary:hover {
+  background-color: #80b682;
+  border: 0;
+  color: #fff;
 }
 
 footer {
