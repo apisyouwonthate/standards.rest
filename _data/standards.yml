@@ -2,11 +2,17 @@
 - name: Health Check Response Format
   url: https://inadarei.github.io/rfc-healthcheck/
   body: NWG
-  version: draft-inadarei-api-health-check-00
+  ref: draft-inadarei-api-health-check-00
   status: draft
-  abstract: |
-    This document proposes a service health check response format for HTTP APIs.
-    
+  abstract: This document proposes a service health check response format for HTTP APIs.
+
+- name: Home Documents
+  url: https://tools.ietf.org/html/draft-nottingham-json-home-06
+  body: NWG
+  ref: draft-nottingham-json-home-06
+  status: draft
+  abstract: This document proposes a home document format for non-browser HTTP clients.
+
 - name: JSON Patch
   ref: RFC6902
   url: https://tools.ietf.org/html/rfc6902
@@ -33,7 +39,7 @@
 - name: Sunset HTTP Header
   body: nwg
   status: draft
-  version: draft-wilde-sunset-header-04
+  ref: draft-wilde-sunset-header-04
   url: https://tools.ietf.org/html/draft-wilde-sunset-header-04
   abstract: |
     This specification defines the Sunset HTTP response header field,
@@ -54,7 +60,7 @@
     between a collection and its members.
 
 - name: Problem Details
-  ref: rfc7807
+  ref: RFC7807
   url: https://tools.ietf.org/html/rfc7807
   body: IETF
   status: proposed
