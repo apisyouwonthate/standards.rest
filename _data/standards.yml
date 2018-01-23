@@ -72,3 +72,15 @@
     This document specifies relation types for Web links, and defines a
     registry for them.  It also defines the use of such links in HTTP
     headers with the Link header field.
+
+- name: JSON Text Sequences
+  ref: RFC7464
+  url: https://tools.ietf.org/html/rfc7464
+  body: IETF
+  status: complete
+  abstract: |
+   This document describes the JavaScript Object Notation (JSON) text
+   sequence format and associated media type "application/json-seq".  A
+   JSON text sequence consists of any number of JSON texts, all encoded
+   in UTF-8, each prefixed by an ASCII Record Separator (0x1E), and each
+   ending with an ASCII Line Feed character (0x0A).
