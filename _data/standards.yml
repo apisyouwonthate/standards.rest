@@ -1,5 +1,4 @@
 
-
 - name: Health Check Response Format
   url: https://inadarei.github.io/rfc-healthcheck/
   body: NWG
@@ -29,6 +28,18 @@
     HTTP PATCH method as a means of describing a set of modifications to
     a target resource's content.
 
+- name: Sunset HTTP Header
+  body: nwg
+  status: draft
+  version: draft-wilde-sunset-header-04
+  url: https://tools.ietf.org/html/draft-wilde-sunset-header-04
+  abstract: |
+    This specification defines the Sunset HTTP response header field,
+    which indicates that a URI is likely to become unresponsive at a
+    specified point in the future.  It also defines a sunset link
+    relation type that allows linking to resources providing information
+    about an upcoming resource or service sunset.
+
 - name: The Item and Collection Link Relations
   ref: RFC6573
   url: https://tools.ietf.org/html/rfc6573
@@ -40,6 +51,16 @@
     link relation types that may be used to express the relationship
     between a collection and its members.
 
+- name: Problem Details
+  ref: rfc7807
+  url: https://tools.ietf.org/html/rfc7807
+  body: IETF
+  status: proposed
+  abstract: |
+    This document defines a "problem detail" as a way to carry machine-
+    readable details of errors in a HTTP response to avoid the need to
+    define new error response formats for HTTP APIs.
+
 - name: Web Linking
   ref: RFC5988
   url: https://tools.ietf.org/html/rfc5988
@@ -49,13 +70,3 @@
     This document specifies relation types for Web links, and defines a
     registry for them.  It also defines the use of such links in HTTP
     headers with the Link header field.
-
-- name: Problem Details for HTTP APIs
-  ref: rfc7807
-  url: https://tools.ietf.org/html/rfc7807
-  body: IETF
-  status: proposed
-  abstract: |
-    This document defines a "problem detail" as a way to carry machine-
-    readable details of errors in a HTTP response to avoid the need to
-    define new error response formats for HTTP APIs.
