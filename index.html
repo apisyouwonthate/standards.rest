@@ -31,7 +31,7 @@
 
     <section class="content">
       <div class="container">
-        <table class="table">
+        <table class="table  table-striped">
           <thead class="thead-inverse">
             <tr>
               <th>Standard</th>
@@ -40,14 +40,19 @@
               <th>Status</th>
             </tr>
           </thead>
-        {% for standard in site.data.standards %}
-          <tr>
-            <td><a href="{{ standard.url }}">{{ standard.name }}</td>
-            <td>{{ standard.body }}</td>
-            <td>{% if standard.ref %}{{ standard.ref }}{% else %}<em>n/a</em>{% endif %}</td>
-            <td>{{ standard.status }}</td>
-          </tr>
-        {% endfor %}
+          <tbody>
+          {% for standard in site.data.standards %}
+            <tr scope="row">
+              <th><a href="{{ standard.url }}">{{ standard.name }}</th>
+              <td>{{ standard.body }}</td>
+              <td>{% if standard.ref %}{{ standard.ref }}{% else %}<em>n/a</em>{% endif %}</td>
+              <td>{{ standard.status }}</td>
+            </tr>
+            <tr>
+              <td colspan="4">{{ standard.abstract }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
         </table>
       </div>
     </section>
