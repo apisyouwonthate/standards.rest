@@ -44,7 +44,7 @@
             <tr scope="row">
               <th><a href="{{ standard.URL }}">{{ standard.title }}</a></th>
               <td>{{ standard.name }}</td>
-              <td><a href="{{ standard.body.URL }}">{{ standard.body.short }}</a></td>
+              <td>{% if standard.body %}<a href="{{ standard.body.URL }}">{{ standard.body.short }}</a>{% endif %}</td>
             </tr>
             <tr>
               <td colspan="4">{{ standard.abstract }}</td>
@@ -57,11 +57,8 @@
           <h4 class="alert-heading">Thank you!</h4>
           <p style="margin-bottom:0">
             Most of this content has come from the awesome community on our <a href="https://slack.apisyouwonthate.com/">Slack channel</a>,
-<<<<<<< HEAD
+
             and <a href="http://webconcepts.info/">webconcepts.info</a> (thanks <a href="https://twitter.com/dret">@dret</a>!), and <a href="https://labs.pedrofelix.org/http-api-specs/">HTTP API Specs</a> by <a href="https://github.com/pmhsfelix">Pedro Felix</a>.
-=======
-            and <a href="http://webconcepts.info/">webconcepts.info</a> (thanks <a href="https://twitter.com/dret">@dret</a>!), and <a href="https://labs.pedrofelix.org/http-api-specs/">HTTP API Specs</a> by <a href="https://github.com/pmhsfelix">Padro Felix</a>.
->>>>>>> Attribution and Home Documents
           </p>
         </div>
 

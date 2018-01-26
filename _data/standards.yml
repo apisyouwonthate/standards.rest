@@ -72,6 +72,189 @@
   body:
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7464
+  title: JavaScript Object Notation (JSON) Text Sequences
+  name: RFC 7464
+  URI: urn:ietf:rfc:7464
+  URL: http://tools.ietf.org/html/rfc7464
+  abstract: This document describes the JavaScript Object Notation (JSON) text sequence
+    format and associated media type "application/json-seq". A JSON text sequence
+    consists of any number of JSON texts, all encoded in UTF-8, each prefixed by an
+    ASCII Record Separator (0x1E), and each ending with an ASCII Line Feed character
+    (0x0A).
+  concepts:
+  - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/application/json-seq
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7540
+  title: Hypertext Transfer Protocol Version 2
+  name: RFC 7540
+  URI: urn:ietf:rfc:7540
+  URL: http://tools.ietf.org/html/rfc7540
+  abstract: This specification describes an optimized expression of the semantics
+    of the Hypertext Transfer Protocol (HTTP). HTTP/2 enables a more efficient use
+    of network resources and a reduced perception of latency by introducing header
+    field compression and allowing multiple concurrent exchanges on the same connection.
+    It also introduces unsolicited push of representations from servers to clients.
+    This specification is an alternative to, but does not obsolete, the HTTP/1.1 message
+    syntax. HTTP's existing semantics remain unchanged.
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/HTTP2-Settings
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/PRI
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/421
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/8246
+  title: HTTP Immutable Responses
+  name: RFC 8246
+  URI: urn:ietf:rfc:8246
+  URL: http://tools.ietf.org/html/rfc8246
+  abstract: The immutable HTTP response Cache-Control extension allows servers to
+    identify resources that will not be updated during their freshness lifetime. This
+    ensures that a client never needs to revalidate a cached fresh resource to be
+    certain it has not been modified.
+  concepts:
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/immutable
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7234
+  title: 'Hypertext Transfer Protocol (HTTP/1.1): Caching'
+  name: RFC 7234
+  URI: urn:ietf:rfc:7234
+  URL: http://tools.ietf.org/html/rfc7234
+  abstract: The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+    for distributed, collaborative, hypertext information systems. This document defines
+    requirements on HTTP caches and the associated header fields that control cache
+    behavior or indicate cacheable response messages.
+  concepts:
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/max-age
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/max-stale
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/min-fresh
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/must-revalidate
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/no-cache
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/no-store
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/no-transform
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/only-if-cached
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/private
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/proxy-revalidate
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/public
+  - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/s-maxage
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Age
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Cache-Control
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Expires
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Pragma
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Warning
+  - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/110
+  - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/111
+  - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/112
+  - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/113
+  - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/199
+  - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/214
+  - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/299
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7240
+  title: Prefer Header for HTTP
+  name: RFC 7240
+  URI: urn:ietf:rfc:7240
+  URL: http://tools.ietf.org/html/rfc7240
+  abstract: This specification defines an HTTP header field that can be used by a
+    client to request that certain behaviors be employed by a server while processing
+    a request.
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Prefer
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Preference-Applied
+  - http://webconcepts.info/concepts/http-preference/: http://webconcepts.info/concepts/http-preference/handling
+  - http://webconcepts.info/concepts/http-preference/: http://webconcepts.info/concepts/http-preference/respond-async
+  - http://webconcepts.info/concepts/http-preference/: http://webconcepts.info/concepts/http-preference/return
+  - http://webconcepts.info/concepts/http-preference/: http://webconcepts.info/concepts/http-preference/wait
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/6749
+  title: The OAuth 2.0 Authorization Framework
+  name: RFC 6749
+  URI: urn:ietf:rfc:6749
+  URL: http://tools.ietf.org/html/rfc6749
+  abstract: The OAuth 2.0 authorization framework enables a third-party application
+    to obtain limited access to an HTTP service, either on behalf of a resource owner
+    by orchestrating an approval interaction between the resource owner and the HTTP
+    service, or by allowing the third-party application to obtain access on its own
+    behalf. This specification replaces and obsoletes the OAuth 1.0 protocol described
+    in RFC 5849.
+  concepts:
+  - http://webconcepts.info/concepts/oauth-authorization-endpoint-response-type/: http://webconcepts.info/concepts/oauth-authorization-endpoint-response-type/code
+  - http://webconcepts.info/concepts/oauth-authorization-endpoint-response-type/: http://webconcepts.info/concepts/oauth-authorization-endpoint-response-type/token
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/access_token
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/client_id
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/client_secret
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/code
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/error
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/error_description
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/error_uri
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/expires_in
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/grant_type
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/password
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/redirect_uri
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/refresh_token
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/response_type
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/scope
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/state
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/token_type
+  - http://webconcepts.info/concepts/oauth-parameter/: http://webconcepts.info/concepts/oauth-parameter/username
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/6750
+  title: 'The OAuth 2.0 Authorization Framework: Bearer Token Usage'
+  name: RFC 6750
+  URI: urn:ietf:rfc:6750
+  URL: http://tools.ietf.org/html/rfc6750
+  abstract: This specification describes how to use bearer tokens in HTTP requests
+    to access OAuth 2.0 protected resources. Any party in possession of a bearer token
+    (a "bearer") can use it to get access to the associated resources (without demonstrating
+    possession of a cryptographic key). To prevent misuse, bearer tokens need to be
+    protected from disclosure in storage and in transport.
+  concepts:
+  - http://webconcepts.info/concepts/http-authentication-scheme/: http://webconcepts.info/concepts/http-authentication-scheme/Bearer
+  - http://webconcepts.info/concepts/oauth-access-token-type/: http://webconcepts.info/concepts/oauth-access-token-type/Bearer
+  - http://webconcepts.info/concepts/oauth-extension-error/: http://webconcepts.info/concepts/oauth-extension-error/insufficient_scope
+  - http://webconcepts.info/concepts/oauth-extension-error/: http://webconcepts.info/concepts/oauth-extension-error/invalid_request
+  - http://webconcepts.info/concepts/oauth-extension-error/: http://webconcepts.info/concepts/oauth-extension-error/invalid_token
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7523
+  title: JSON Web Token (JWT) Profile for OAuth 2.0 Client Authentication and Authorization
+    Grants
+  name: RFC 7523
+  URI: urn:ietf:rfc:7523
+  URL: http://tools.ietf.org/html/rfc7523
+  abstract: This specification defines the use of a JSON Web Token (JWT) Bearer Token
+    as a means for requesting an OAuth 2.0 access token as well as for client authentication.
+  concepts:
+  - http://webconcepts.info/concepts/oauth-uri/: http://webconcepts.info/concepts/oauth-uri/urn:ietf:params:oauth:client-assertion-type:jwt-bearer
+  - http://webconcepts.info/concepts/oauth-uri/: http://webconcepts.info/concepts/oauth-uri/urn:ietf:params:oauth:grant-type:jwt-bearer
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
+- id: http://webconcepts.info/specs/W3C/TR/preload
+  title: Preload
+  name: W3C TR http://www.w3.org/TR/preload
+  URI: http://www.w3.org/TR/preload
+  URL: http://www.w3.org/TR/preload
+  abstract: This specification defines the preload keyword that may be used with link
+    elements. This keyword provides a declarative fetch primitive that initiates an
+    early fetch and separates fetching from resource execution.
+  concepts:
+  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/preload
+  body:
+    URL: http://webconcepts.info/specs/W3C/
+    short: W3C
 - title: Health Check Response Format
   URL: https://inadarei.github.io/rfc-healthcheck/
   name: draft-inadarei-api-health-check-00
@@ -110,15 +293,3 @@
     This document specifies relation types for Web links, and defines a
     registry for them.  It also defines the use of such links in HTTP
     headers with the Link header field.
-
-- name: JSON Text Sequences
-  ref: RFC7464
-  url: https://tools.ietf.org/html/rfc7464
-  body: IETF
-  status: complete
-  abstract: |
-   This document describes the JavaScript Object Notation (JSON) text
-   sequence format and associated media type "application/json-seq".  A
-   JSON text sequence consists of any number of JSON texts, all encoded
-   in UTF-8, each prefixed by an ASCII Record Separator (0x1E), and each
-   ending with an ASCII Line Feed character (0x0A).

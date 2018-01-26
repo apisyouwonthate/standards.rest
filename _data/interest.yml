@@ -5,6 +5,17 @@ webconcepts:
     - pointer: /series/0/I-D/specs/42/wilde-sunset-header
     - pointer: /series/1/RFC/specs/70/6573
     - pointer: /series/1/RFC/specs/145/7807
+    - pointer: /series/1/RFC/specs/115/7464
+    - pointer: /series/1/RFC/specs/126/7540
+    - pointer: /series/1/RFC/specs/167/8246
+    - pointer: /series/1/RFC/specs/107/7234
+    - pointer: /series/1/RFC/specs/110/7240
+    - pointer: /series/1/RFC/specs/78/6749
+    - pointer: /series/1/RFC/specs/79/6750
+    - pointer: /series/1/RFC/specs/124/7523
+
+  /W3C:
+    - pointer: /series/0/TR/specs/26/preload
 
 custom:
 
@@ -48,16 +59,3 @@ custom:
       This document specifies relation types for Web links, and defines a
       registry for them.  It also defines the use of such links in HTTP
       headers with the Link header field.
-
-  # 
-  # - name: JSON Text Sequences
-  #   ref: RFC7464
-  #   url: https://tools.ietf.org/html/rfc7464
-  #   body: IETF
-  #   status: complete
-  #   abstract: |
-  #    This document describes the JavaScript Object Notation (JSON) text
-  #    sequence format and associated media type "application/json-seq".  A
-  #    JSON text sequence consists of any number of JSON texts, all encoded
-  #    in UTF-8, each prefixed by an ASCII Record Separator (0x1E), and each
-  #    ending with an ASCII Line Feed character (0x0A).

@@ -36,7 +36,6 @@ task :rewrite do
   end
 
   relevant += interest['custom']
-  puts "values #{relevant}"
 
   relevant.sort_by do |spec|
     spec['title'] unless spec['title'].nil?
