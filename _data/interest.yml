@@ -1,0 +1,61 @@
+webconcepts:
+  IETF:
+    - pointer: /series/0/I-D/specs/0/amundsen-richardson-foster-alps
+    - pointer: /series/0/I-D/specs/26/nottingham-json-home
+    - pointer: /series/0/I-D/specs/42/wilde-sunset-header
+    - pointer: /series/1/RFC/specs/70/6573
+    - pointer: /series/1/RFC/specs/145/7807
+    - pointer: /series/1/RFC/specs/115/7464
+    - pointer: /series/1/RFC/specs/126/7540
+    - pointer: /series/1/RFC/specs/167/8246
+    - pointer: /series/1/RFC/specs/107/7234
+    - pointer: /series/1/RFC/specs/110/7240
+    - pointer: /series/1/RFC/specs/78/6749
+    - pointer: /series/1/RFC/specs/79/6750
+    - pointer: /series/1/RFC/specs/124/7523
+
+  W3C:
+    - pointer: /series/0/TR/specs/26/preload
+
+custom:
+
+  - title: Health Check Response Format
+    URL: https://inadarei.github.io/rfc-healthcheck/
+    name: draft-inadarei-api-health-check-00
+    abstract: This document proposes a service health check response format for HTTP APIs.
+
+  - title: JSON Patch
+    URL: https://tools.ietf.org/html/rfc6902
+    name: RFC6902
+    body:
+      short: IETF
+      url: http://webconcepts.info/specs/IETF
+    abstract: |
+      JSON Patch defines a JSON document structure for expressing a
+      sequence of operations to apply to a JavaScript Object Notation
+      (JSON) document; it is suitable for use with the HTTP PATCH method.
+      The "application/json-patch+json" media type is used to identify such
+      patch documents.
+
+  - title: JSON Merge Patch
+    URL: https://tools.ietf.org/html/rfc7396
+    name: RFC7396
+    body:
+      short: IETF
+      url: http://webconcepts.info/specs/IETF
+    abstract: |
+      This specification defines the JSON merge patch format and processing
+      rules.  The merge patch format is primarily intended for use with the
+      HTTP PATCH method as a means of describing a set of modifications to
+      a target resource's content.
+
+  - title: Web Linking
+    URL: https://tools.ietf.org/html/rfc5988
+    name: RFC5988
+    body:
+      short: IETF
+      url: http://webconcepts.info/specs/IETF
+    abstract: |
+      This document specifies relation types for Web links, and defines a
+      registry for them.  It also defines the use of such links in HTTP
+      headers with the Link header field.
