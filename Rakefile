@@ -17,19 +17,15 @@ task :rewrite do
   specs_data = JSON.parse(File.read('./tmp/specs.json'))
 
   # Grab them specs from specs.json
-  relevant = interest['webconcepts'].flat_map do |body, specs|
-
-    body_pointer = JsonPointer.new(specs_data, body)
-    raise "Pointer #{body_pointer} does not exist in #{specs_data}" unless body_pointer.exists?
-    body_hash = body_pointer.value
-
+  relevant = interest['webconcepts'].flat_map do |body_key, specs|
+    body = specs_data[body_key]
     specs.map do |spec|
-      pointer = JsonPointer.new(body_hash, spec['pointer'])
+      pointer = JsonPointer.new(body, spec['pointer'])
       raise "Pointer #{spec['pointer']} does not exist" unless pointer.exists?
       pointer.value.tap do |v|
         v['body'] = {
-          'URL' => body_hash['id'],
-          'short' => body_hash['short']
+          'URL' => body['id'],
+          'short' => body['short']
         }
       end
     end

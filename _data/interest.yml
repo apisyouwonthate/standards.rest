@@ -1,5 +1,5 @@
 webconcepts:
-  /IETF:
+  IETF:
     - pointer: /series/0/I-D/specs/0/amundsen-richardson-foster-alps
     - pointer: /series/0/I-D/specs/26/nottingham-json-home
     - pointer: /series/0/I-D/specs/42/wilde-sunset-header
@@ -14,7 +14,7 @@ webconcepts:
     - pointer: /series/1/RFC/specs/79/6750
     - pointer: /series/1/RFC/specs/124/7523
 
-  /W3C:
+  W3C:
     - pointer: /series/0/TR/specs/26/preload
 
 custom:
