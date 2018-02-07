@@ -16,6 +16,7 @@ webconcepts:
     - pointer: /series/1/RFC/specs/147/7807
     - pointer: /series/1/RFC/specs/169/8246
     - pointer: /series/1/RFC/specs/172/8288
+    - pointer: /series/1/RFC/specs/139/7644
 
   W3C:
     - pointer: /series/0/TR/specs/26/preload

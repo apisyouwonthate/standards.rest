@@ -286,6 +286,24 @@
   body:
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7644
+  title: System for Cross-domain Identity Management
+  name: RFC 7644
+  URI: urn:ietf:rfc:7644
+  URL: http://tools.ietf.org/html/rfc7644
+  abstract: The System for Cross-domain Identity Management (SCIM) specification is an HTTP-based
+    protocol that makes managing identities in multi-domain scenarios easier to support via a standardized service.
+    Examples include, but are not limited to, enterprise-to-cloud service providers and inter-cloud scenarios.
+    The specification suite seeks to build upon experience with existing schemas and deployments,
+    placing specific emphasis on simplicity of development and integration, while applying existing authentication,
+    authorization, and privacy models. SCIM's intent is to reduce the cost and complexity of user
+    management operations by providing a common user schema, an extension model,
+    and a service protocol defined by this document.
+  concepts:
+  - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/application/scim+json
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
 - id: http://webconcepts.info/specs/W3C/TR/preload
   title: Preload
   name: W3C TR http://www.w3.org/TR/preload
