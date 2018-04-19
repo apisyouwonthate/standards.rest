@@ -60,6 +60,21 @@
   body:
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/6585
+  title: Additional HTTP Status Codes
+  name: RFC 6585
+  URI: urn:ietf:rfc:6585
+  URL: http://tools.ietf.org/html/rfc6585
+  abstract: This document specifies additional HyperText Transfer Protocol (HTTP)
+    status codes for a variety of common situations.
+  concepts:
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/428
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/429
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/431
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/511
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
 - id: http://webconcepts.info/specs/IETF/RFC/6749
   title: The OAuth 2.0 Authorization Framework
   name: RFC 6749
@@ -241,6 +256,16 @@
   - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/HTTP2-Settings
   - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/PRI
   - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/421
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x0
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x1
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x2
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x3
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x4
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x5
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x6
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x7
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x8
+  - http://webconcepts.info/concepts/http2-frame-type/: http://webconcepts.info/concepts/http2-frame-type/0x9
   body:
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
@@ -287,18 +312,20 @@
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
 - id: http://webconcepts.info/specs/IETF/RFC/7644
-  title: System for Cross-domain Identity Management
+  title: 'System for Cross-domain Identity Management: Protocol'
   name: RFC 7644
   URI: urn:ietf:rfc:7644
   URL: http://tools.ietf.org/html/rfc7644
-  abstract: The System for Cross-domain Identity Management (SCIM) specification is an HTTP-based
-    protocol that makes managing identities in multi-domain scenarios easier to support via a standardized service.
-    Examples include, but are not limited to, enterprise-to-cloud service providers and inter-cloud scenarios.
-    The specification suite seeks to build upon experience with existing schemas and deployments,
-    placing specific emphasis on simplicity of development and integration, while applying existing authentication,
-    authorization, and privacy models. SCIM's intent is to reduce the cost and complexity of user
-    management operations by providing a common user schema, an extension model,
-    and a service protocol defined by this document.
+  abstract: The System for Cross-domain Identity Management (SCIM) specification is
+    an HTTP-based protocol that makes managing identities in multi-domain scenarios
+    easier to support via a standardized service. Examples include, but are not limited
+    to, enterprise-to-cloud service providers and inter-cloud scenarios.  The specification
+    suite seeks to build upon experience with existing schemas and deployments, placing
+    specific emphasis on simplicity of development and integration, while applying
+    existing authentication, authorization, and privacy models.  SCIM's intent is
+    to reduce the cost and complexity of user management operations by providing a
+    common user schema, an extension model, and a service protocol defined by this
+    document.
   concepts:
   - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/application/scim+json
   body:
