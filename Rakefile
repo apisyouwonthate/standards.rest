@@ -16,7 +16,7 @@ task :rewrite do
   interest = YAML.load(File.read('./_data/interest.yml'))
   specs_data = JSON.parse(File.read('./tmp/specs.json'))
 
-  # Grab them specs from specs.json
+  # Grab the specs from specs.json
   relevant = interest['webconcepts'].flat_map do |body_key, specs|
     body = specs_data[body_key]
     specs.map do |spec|
