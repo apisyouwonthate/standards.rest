@@ -142,6 +142,28 @@
   body:
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7089
+  title: HTTP framework for time-based access to resource states - Memento
+  name: RFC 7089
+  URI: urn:ietf:rfc:7089
+  URL: http://tools.ietf.org/html/rfc7089
+  abstract: The HTTP-based Memento framework bridges the present and past Web. It
+    facilitates obtaining representations of prior states of a given resource by introducing
+    datetime negotiation and TimeMaps. Datetime negotiation is a variation on content
+    negotiation that leverages the given resource's URI and a user agent's preferred
+    datetime. TimeMaps are lists that enumerate URIs of resources that encapsulate
+    prior states of the given resource. The framework also facilitates recognizing
+    a resource that encapsulates a frozen prior state of another resource.
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Accept-Datetime
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Memento-Datetime
+  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/memento
+  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/original
+  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/timegate
+  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/timemap
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
 - id: http://webconcepts.info/specs/IETF/RFC/7234
   title: 'Hypertext Transfer Protocol (HTTP/1.1): Caching'
   name: RFC 7234
@@ -269,6 +291,26 @@
   body:
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7644
+  title: 'System for Cross-domain Identity Management: Protocol'
+  name: RFC 7644
+  URI: urn:ietf:rfc:7644
+  URL: http://tools.ietf.org/html/rfc7644
+  abstract: The System for Cross-domain Identity Management (SCIM) specification is
+    an HTTP-based protocol that makes managing identities in multi-domain scenarios
+    easier to support via a standardized service. Examples include, but are not limited
+    to, enterprise-to-cloud service providers and inter-cloud scenarios.  The specification
+    suite seeks to build upon experience with existing schemas and deployments, placing
+    specific emphasis on simplicity of development and integration, while applying
+    existing authentication, authorization, and privacy models.  SCIM's intent is
+    to reduce the cost and complexity of user management operations by providing a
+    common user schema, an extension model, and a service protocol defined by this
+    document.
+  concepts:
+  - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/application/scim+json
+  body:
+    URL: http://webconcepts.info/specs/IETF/
+    short: IETF
 - id: http://webconcepts.info/specs/IETF/RFC/7807
   title: Problem Details for HTTP APIs
   name: RFC 7807
@@ -308,26 +350,6 @@
     field.
   concepts:
   - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Link
-  body:
-    URL: http://webconcepts.info/specs/IETF/
-    short: IETF
-- id: http://webconcepts.info/specs/IETF/RFC/7644
-  title: 'System for Cross-domain Identity Management: Protocol'
-  name: RFC 7644
-  URI: urn:ietf:rfc:7644
-  URL: http://tools.ietf.org/html/rfc7644
-  abstract: The System for Cross-domain Identity Management (SCIM) specification is
-    an HTTP-based protocol that makes managing identities in multi-domain scenarios
-    easier to support via a standardized service. Examples include, but are not limited
-    to, enterprise-to-cloud service providers and inter-cloud scenarios.  The specification
-    suite seeks to build upon experience with existing schemas and deployments, placing
-    specific emphasis on simplicity of development and integration, while applying
-    existing authentication, authorization, and privacy models.  SCIM's intent is
-    to reduce the cost and complexity of user management operations by providing a
-    common user schema, an extension model, and a service protocol defined by this
-    document.
-  concepts:
-  - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/application/scim+json
   body:
     URL: http://webconcepts.info/specs/IETF/
     short: IETF
