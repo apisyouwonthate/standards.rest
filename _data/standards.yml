@@ -368,6 +368,6 @@
     short: W3C
 - title: Health Check Response Format
   URL: https://inadarei.github.io/rfc-healthcheck/
-  name: draft-inadarei-api-health-check-00
+  name: draft-inadarei-api-health-check-03
   abstract: This document proposes a service health check response format for HTTP
     APIs.
