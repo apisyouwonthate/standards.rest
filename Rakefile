@@ -1,6 +1,7 @@
+require 'byebug'
 require 'faraday'
 require 'json'
-require 'json-pointer'
+require 'jsonpath'
 require 'yaml'
 
 task default: [:download, :rewrite]
@@ -14,21 +15,30 @@ end
 task :rewrite do
 
   interest = YAML.load(File.read('./_data/interest.yml'))
-  specs_data = JSON.parse(File.read('./tmp/specs.json'))
+  data = JSON.parse(File.read('./tmp/specs.json'))
 
   # Grab the specs from specs.json
-  relevant = interest['webconcepts'].flat_map do |body_key, specs|
-    body = specs_data[body_key]
-    specs.map do |spec|
-      pointer = JsonPointer.new(body, spec['pointer'])
-      raise "Pointer #{spec['pointer']} does not exist" unless pointer.exists?
-      pointer.value.tap do |v|
-        v['body'] = {
-          'URL' => body['id'],
-          'short' => body['short']
-        }
-      end
+  relevant = data.flat_map do |wg|
+    wg_code, wg_data = wg
+    groups_interested_specs = interest['webconcepts'][wg_code]
+    # Dont want anything from these folks right now
+    next if groups_interested_specs.nil?
+
+    found_specs = groups_interested_specs.map do |interested_spec|
+      spec = JsonPath.new(interested_spec['path']).first(wg_data)
+
+      raise "No data found for #{interested_spec['path']}" if spec.nil?
+
+      spec['wg'] = {
+        'URL' => wg_data['id'],
+        'short' => wg_data['short']
+      }
+
+      spec
     end
+
+    puts "Found #{found_specs.length} specs for #{wg_code}"
+
   end
 
   # Add our own standards in

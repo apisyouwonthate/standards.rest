@@ -1,28 +1,32 @@
 webconcepts:
   IETF:
-    - pointer: /series/0/I-D/specs/0/amundsen-richardson-foster-alps
-    - pointer: /series/0/I-D/specs/27/nottingham-json-home
-    - pointer: /series/0/I-D/specs/44/wilde-sunset-header
-    - pointer: /series/1/RFC/specs/70/6573
-    - pointer: /series/1/RFC/specs/72/6585
-    - pointer: /series/1/RFC/specs/78/6749
-    - pointer: /series/1/RFC/specs/79/6750
-    - pointer: /series/1/RFC/specs/87/6902
-    - pointer: /series/1/RFC/specs/100/7089
-    - pointer: /series/1/RFC/specs/108/7234
-    - pointer: /series/1/RFC/specs/111/7240
-    - pointer: /series/1/RFC/specs/116/7396
-    - pointer: /series/1/RFC/specs/117/7464
-    - pointer: /series/1/RFC/specs/126/7523
-    - pointer: /series/1/RFC/specs/128/7540
-    - pointer: /series/1/RFC/specs/139/7644
-    - pointer: /series/1/RFC/specs/147/7807
-    - pointer: /series/1/RFC/specs/169/8246
-    - pointer: /series/1/RFC/specs/173/8288
+    - path: "$..['I-D']..['amundsen-richardson-foster-alps','dalal-deprecation-header']"
+    - path: "$..['I-D']..['dalal-deprecation-header']"
+    - path: "$..['I-D']..['nottingham-json-home']"
+    - path: "$..['I-D']..['wilde-sunset-header']"
+    - path: "$..['I-D']..['inadarei-api-health-check']"
+    - path: "$..['RFC']..['6573']"
+    - path: "$..['RFC']..['6585']"
+    - path: "$..['RFC']..['6749']"
+    - path: "$..['RFC']..['6750']"
+    - path: "$..['RFC']..['6902']"
+    - path: "$..['RFC']..['7089']"
+    - path: "$..['RFC']..['7234']"
+    - path: "$..['RFC']..['7240']"
+    - path: "$..['RFC']..['7396']"
+    - path: "$..['RFC']..['7464']"
+    - path: "$..['RFC']..['7523']"
+    - path: "$..['RFC']..['7540']"
+    - path: "$..['RFC']..['7644']"
+    - path: "$..['RFC']..['7807']"
+    - path: "$..['RFC']..['8246']"
+    - path: "$..['RFC']..['8288']"
 
   W3C:
-    - pointer: /series/0/TR/specs/29/preload
+    - path: "$..[TR]..[preload]"
 
+
+# TODO add this one https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
 custom:
 
   - title: Health Check Response Format
