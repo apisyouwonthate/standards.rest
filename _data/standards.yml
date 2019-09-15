@@ -35,6 +35,10 @@
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
     short: IETF
+- title: HAL
+  URL: http://stateless.co/hal_specification.html
+  abstract: HAL is a simple format that gives a consistent and easy way to hyperlink
+    between resources in your API.
 - id: http://webconcepts.info/specs/IETF/RFC/8246
   title: HTTP Immutable Responses
   name: RFC 8246
@@ -46,29 +50,6 @@
     certain it has not been modified.
   concepts:
   - http://webconcepts.info/concepts/http-cache-directive/: http://webconcepts.info/concepts/http-cache-directive/immutable
-  wg:
-    id: http://webconcepts.info/specs/IETF/
-    name: Internet Engineering Task Force
-    short: IETF
-- id: http://webconcepts.info/specs/IETF/RFC/7089
-  title: HTTP framework for time-based access to resource states - Memento
-  name: RFC 7089
-  URI: urn:ietf:rfc:7089
-  URL: http://tools.ietf.org/html/rfc7089
-  abstract: The HTTP-based Memento framework bridges the present and past Web. It
-    facilitates obtaining representations of prior states of a given resource by introducing
-    datetime negotiation and TimeMaps. Datetime negotiation is a variation on content
-    negotiation that leverages the given resource's URI and a user agent's preferred
-    datetime. TimeMaps are lists that enumerate URIs of resources that encapsulate
-    prior states of the given resource. The framework also facilitates recognizing
-    a resource that encapsulates a frozen prior state of another resource.
-  concepts:
-  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Accept-Datetime
-  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Memento-Datetime
-  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/memento
-  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/original
-  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/timegate
-  - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/timemap
   wg:
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
@@ -95,6 +76,29 @@
   concepts:
   - http://webconcepts.info/concepts/link-relation/: http://webconcepts.info/concepts/link-relation/home
   - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/application/home+json
+  wg:
+    id: http://webconcepts.info/specs/IETF/
+    name: Internet Engineering Task Force
+    short: IETF
+- title: Hydra
+  URL: https://www.hydra-cg.com/spec/latest/core
+  name: Hydra Core Vocabulary
+  abstract: Hydra is a lightweight vocabulary to create hypermedia-driven Web APIs.
+- id: http://webconcepts.info/specs/IETF/RFC/7235
+  title: 'Hypertext Transfer Protocol (HTTP/1.1): Authentication'
+  name: RFC 7235
+  URI: urn:ietf:rfc:7235
+  URL: http://tools.ietf.org/html/rfc7235
+  abstract: The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+    for distributed, collaborative, hypermedia information systems. This document
+    defines the HTTP Authentication framework.
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Authorization
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Proxy-Authenticate
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Proxy-Authorization
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/WWW-Authenticate
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/401
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/407
   wg:
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
@@ -133,6 +137,173 @@
   - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/199
   - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/214
   - http://webconcepts.info/concepts/http-warn-code/: http://webconcepts.info/concepts/http-warn-code/299
+  wg:
+    id: http://webconcepts.info/specs/IETF/
+    name: Internet Engineering Task Force
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7232
+  title: 'Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests'
+  name: RFC 7232
+  URI: urn:ietf:rfc:7232
+  URL: http://tools.ietf.org/html/rfc7232
+  abstract: The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+    for distributed, collaborative, hypertext information systems. This document defines
+    HTTP/1.1 conditional requests, including metadata header fields for indicating
+    state changes, request header fields for making preconditions on such state, and
+    rules for constructing the responses to a conditional request when one or more
+    preconditions evaluate to false.
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/ETag
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/If-Match
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/If-Modified-Since
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/If-None-Match
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/If-Unmodified-Since
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Last-Modified
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/304
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/412
+  wg:
+    id: http://webconcepts.info/specs/IETF/
+    name: Internet Engineering Task Force
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7230
+  title: 'Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing'
+  name: RFC 7230
+  URI: urn:ietf:rfc:7230
+  URL: http://tools.ietf.org/html/rfc7230
+  abstract: The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+    for distributed, collaborative, hypertext information systems. HTTP has been in
+    use by the World Wide Web global information initiative since 1990. This document
+    provides an overview of HTTP architecture and its associated terminology, defines
+    the "http" and "https" Uniform Resource Identifier (URI) schemes, defines the
+    HTTP/1.1 message syntax and parsing requirements, and describes general security
+    concerns for implementations.
+  concepts:
+  - http://webconcepts.info/concepts/http-content-coding/: http://webconcepts.info/concepts/http-content-coding/compress
+  - http://webconcepts.info/concepts/http-content-coding/: http://webconcepts.info/concepts/http-content-coding/deflate
+  - http://webconcepts.info/concepts/http-content-coding/: http://webconcepts.info/concepts/http-content-coding/gzip
+  - http://webconcepts.info/concepts/http-content-coding/: http://webconcepts.info/concepts/http-content-coding/x-compress
+  - http://webconcepts.info/concepts/http-content-coding/: http://webconcepts.info/concepts/http-content-coding/x-gzip
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Close
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Connection
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Content-Length
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Host
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/TE
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Trailer
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Transfer-Encoding
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Upgrade
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Via
+  - http://webconcepts.info/concepts/http-transfer-coding/: http://webconcepts.info/concepts/http-transfer-coding/chunked
+  - http://webconcepts.info/concepts/http-transfer-coding/: http://webconcepts.info/concepts/http-transfer-coding/compress
+  - http://webconcepts.info/concepts/http-transfer-coding/: http://webconcepts.info/concepts/http-transfer-coding/deflate
+  - http://webconcepts.info/concepts/http-transfer-coding/: http://webconcepts.info/concepts/http-transfer-coding/gzip
+  - http://webconcepts.info/concepts/http-transfer-coding/: http://webconcepts.info/concepts/http-transfer-coding/x-compress
+  - http://webconcepts.info/concepts/http-transfer-coding/: http://webconcepts.info/concepts/http-transfer-coding/x-gzip
+  - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/application/http
+  - http://webconcepts.info/concepts/media-type/: http://webconcepts.info/concepts/media-type/message/http
+  - http://webconcepts.info/concepts/uri-scheme/: http://webconcepts.info/concepts/uri-scheme/http
+  - http://webconcepts.info/concepts/uri-scheme/: http://webconcepts.info/concepts/uri-scheme/https
+  wg:
+    id: http://webconcepts.info/specs/IETF/
+    name: Internet Engineering Task Force
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7233
+  title: 'Hypertext Transfer Protocol (HTTP/1.1): Range Requests'
+  name: RFC 7233
+  URI: urn:ietf:rfc:7233
+  URL: http://tools.ietf.org/html/rfc7233
+  abstract: The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+    for distributed, collaborative, hypertext information systems. This document defines
+    range requests and the rules for constructing and combining responses to those
+    requests.
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Accept-Ranges
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Content-Range
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/If-Range
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Range
+  - http://webconcepts.info/concepts/http-range-unit/: http://webconcepts.info/concepts/http-range-unit/bytes
+  - http://webconcepts.info/concepts/http-range-unit/: http://webconcepts.info/concepts/http-range-unit/none
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/206
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/416
+  wg:
+    id: http://webconcepts.info/specs/IETF/
+    name: Internet Engineering Task Force
+    short: IETF
+- id: http://webconcepts.info/specs/IETF/RFC/7231
+  title: 'Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content'
+  name: RFC 7231
+  URI: urn:ietf:rfc:7231
+  URL: http://tools.ietf.org/html/rfc7231
+  abstract: The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+    for distributed, collaborative, hypertext information systems. This document defines
+    the semantics of HTTP/1.1 messages as expressed by request methods, request header
+    fields, response status codes, and response header fields, along with the payload
+    of messages (metadata and body content) and mechanisms for content negotiation.
+  concepts:
+  - http://webconcepts.info/concepts/http-content-coding/: http://webconcepts.info/concepts/http-content-coding/identity
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Accept
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Accept-Charset
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Accept-Encoding
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Accept-Language
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Allow
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Content-Encoding
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Content-Language
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Content-Location
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Content-Type
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Date
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Expect
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/From
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Location
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/MIME-Version
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Max-Forwards
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Referer
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Retry-After
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Server
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/User-Agent
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Vary
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/CONNECT
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/DELETE
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/GET
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/HEAD
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/OPTIONS
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/POST
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/PUT
+  - http://webconcepts.info/concepts/http-method/: http://webconcepts.info/concepts/http-method/TRACE
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/100
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/101
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/200
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/201
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/202
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/203
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/204
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/205
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/300
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/301
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/302
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/303
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/305
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/306
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/307
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/400
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/402
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/403
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/404
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/405
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/406
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/408
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/409
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/410
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/411
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/413
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/414
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/415
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/417
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/426
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/500
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/501
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/502
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/503
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/504
+  - http://webconcepts.info/concepts/http-status-code/: http://webconcepts.info/concepts/http-status-code/505
   wg:
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
@@ -197,6 +368,10 @@
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
     short: IETF
+- title: JSON:API
+  URL: https://jsonapi.org/
+  abstract: If you’ve ever argued with your team about the way your JSON responses
+    should be formatted, JSON:API can be your anti-bikeshedding tool.
 - id: http://webconcepts.info/specs/IETF/RFC/6902
   title: JavaScript Object Notation (JSON) Patch
   name: RFC 6902
@@ -237,6 +412,24 @@
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
     short: IETF
+- id: http://webconcepts.info/specs/OASIS/standard/odata-v4.0-part1-protocol
+  title: 'OData Version 4.0 Part 1: Protocol'
+  name: OASIS Standard odata-v4.0-part1-protocol
+  URI: urn:oasis:names:specification:odata-v4.0-part1-protocol
+  URL: http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html
+  abstract: The Open Data Protocol (OData) enables the creation of REST-based data
+    services, which allow resources, identified using Uniform Resource Locators (URLs)
+    and defined in a data model, to be published and edited by Web clients using simple
+    HTTP messages. This specification defines the core semantics and the behavioral
+    aspects of the protocol.
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/OData-EntityId
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/OData-Isolation
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/OData-MaxVersion
+  wg:
+    id: http://webconcepts.info/specs/OASIS/
+    name: Organization for the Advancement of Structured Information Standards
+    short: OASIS
 - id: http://webconcepts.info/specs/IETF/RFC/7240
   title: Prefer Header for HTTP
   name: RFC 7240
@@ -285,6 +478,9 @@
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
     short: IETF
+- title: Siren
+  URL: https://github.com/kevinswiber/siren
+  abstract: A hypermedia specification for representing entities.
 - id: http://webconcepts.info/specs/IETF/RFC/7644
   title: 'System for Cross-domain Identity Management: Protocol'
   name: RFC 7644

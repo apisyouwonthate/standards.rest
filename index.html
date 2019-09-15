@@ -43,7 +43,7 @@
           {% for standard in site.data.standards %}
             <tr scope="row">
               <th><a href="{{ standard.id }}">{{ standard.title }}</a></th>
-              <td>{{ standard.name }}</td>
+              <td>{% if standard.name %}{{ standard.name }}{% endif %}</td>
               <td>{% if standard.wg %}<a href="{{ standard.wg.id }}">{{ standard.wg.short }}</a>{% endif %}</td>
             </tr>
             <tr>

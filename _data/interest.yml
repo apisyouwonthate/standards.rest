@@ -10,8 +10,12 @@ webconcepts:
   - "urn:ietf:rfc:6749"
   - "urn:ietf:rfc:6750"
   - "urn:ietf:rfc:6902"
-  - "urn:ietf:rfc:7089"
+  - "urn:ietf:rfc:7230"
+  - "urn:ietf:rfc:7231"
+  - "urn:ietf:rfc:7232"
+  - "urn:ietf:rfc:7233"
   - "urn:ietf:rfc:7234"
+  - "urn:ietf:rfc:7235"
   - "urn:ietf:rfc:7240"
   - "urn:ietf:rfc:7396"
   - "urn:ietf:rfc:7464"
@@ -21,6 +25,7 @@ webconcepts:
   - "urn:ietf:rfc:7807"
   - "urn:ietf:rfc:8246"
   - "urn:ietf:rfc:8288"
+  - "urn:oasis:names:specification:odata-v4.0-part1-protocol"
 
 custom: 
   - title: "Metalink/HTTP: Mirrors and Hashes"
@@ -28,3 +33,20 @@ custom:
     name: RFC 6249
     abstract: This document proposes a service health check response format for HTTP APIs.
     wg: IETF
+
+  - title: Siren
+    URL: https://github.com/kevinswiber/siren
+    abstract: A hypermedia specification for representing entities.
+
+  - title: JSON:API
+    URL: https://jsonapi.org/
+    abstract: If you’ve ever argued with your team about the way your JSON responses should be formatted, JSON:API can be your anti-bikeshedding tool.
+
+  - title: HAL
+    URL: http://stateless.co/hal_specification.html
+    abstract: HAL is a simple format that gives a consistent and easy way to hyperlink between resources in your API.
+
+  - title: Hydra
+    URL: https://www.hydra-cg.com/spec/latest/core
+    name: Hydra Core Vocabulary 
+    abstract: Hydra is a lightweight vocabulary to create hypermedia-driven Web APIs. 
