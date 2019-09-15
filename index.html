@@ -42,9 +42,9 @@
           <tbody>
           {% for standard in site.data.standards %}
             <tr scope="row">
-              <th><a href="{{ standard.URL }}">{{ standard.title }}</a></th>
+              <th><a href="{{ standard.id }}">{{ standard.title }}</a></th>
               <td>{{ standard.name }}</td>
-              <td>{% if standard.body %}<a href="{{ standard.body.URL }}">{{ standard.body.short }}</a>{% endif %}</td>
+              <td>{% if standard.wg %}<a href="{{ standard.wg.id }}">{{ standard.wg.short }}</a>{% endif %}</td>
             </tr>
             <tr>
               <td colspan="4">{{ standard.abstract }}</td>
