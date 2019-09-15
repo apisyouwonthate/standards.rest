@@ -4,6 +4,7 @@ webconcepts:
   - "urn:ietf:id:dalal-deprecation-header"
   - "urn:ietf:id:inadarei-api-health-check"
   - "urn:ietf:id:nottingham-json-home"
+  - "urn:ietf:id:pot-prefer-push"
   - "urn:ietf:id:wilde-sunset-header"
   - "urn:ietf:rfc:6573"
   - "urn:ietf:rfc:6585"

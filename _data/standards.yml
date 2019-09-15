@@ -54,6 +54,20 @@
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
     short: IETF
+- id: http://webconcepts.info/specs/IETF/I-D/pot-prefer-push
+  title: HTTP-client suggested Push Preference
+  name: Internet Draft pot-prefer-push
+  URI: urn:ietf:id:pot-prefer-push
+  URL: http://tools.ietf.org/html/draft-pot-prefer-push
+  abstract: '"Prefer-Push" is a HTTP header that a client may use to request that
+    a server uses HTTP/2 Push to send related resources as identified by their link
+    relationships.'
+  concepts:
+  - http://webconcepts.info/concepts/http-header/: http://webconcepts.info/concepts/http-header/Prefer-Push
+  wg:
+    id: http://webconcepts.info/specs/IETF/
+    name: Internet Engineering Task Force
+    short: IETF
 - id: http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check
   title: Health Check Response Format for HTTP APIs
   name: Internet Draft inadarei-api-health-check
