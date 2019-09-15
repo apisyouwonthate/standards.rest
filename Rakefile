@@ -1,7 +1,5 @@
-require 'byebug'
 require 'faraday'
 require 'json'
-require 'jsonpath'
 require 'yaml'
 
 task default: [:download, :rewrite]
