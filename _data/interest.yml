@@ -22,10 +22,9 @@ webconcepts:
   - "urn:ietf:rfc:8246"
   - "urn:ietf:rfc:8288"
 
-# TODO add this one https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
-custom: []
-
-  # - title: Some Custom Thing
-  #   URL: https://whoever.github.io/whatever/
-  #   name: draft-whoever-api-health-check-03
-  #   abstract: This document proposes a service health check response format for HTTP APIs.
+custom: 
+  - title: "Metalink/HTTP: Mirrors and Hashes"
+    URL: https://tools.ietf.org/html/rfc6249
+    name: RFC 6249
+    abstract: This document proposes a service health check response format for HTTP APIs.
+    wg: IETF
