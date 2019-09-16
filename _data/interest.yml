@@ -5,7 +5,6 @@ webconcepts:
   - "urn:ietf:id:inadarei-api-health-check"
   - "urn:ietf:id:nottingham-json-home"
   - "urn:ietf:id:pot-prefer-push"
-  - "urn:ietf:id:wilde-sunset-header"
   - "urn:ietf:rfc:6573"
   - "urn:ietf:rfc:6585"
   - "urn:ietf:rfc:6749"
@@ -26,6 +25,7 @@ webconcepts:
   - "urn:ietf:rfc:7807"
   - "urn:ietf:rfc:8246"
   - "urn:ietf:rfc:8288"
+  - "urn:ietf:rfc:8594"
   - "urn:oasis:names:specification:odata-v4.0-part1-protocol"
 
 custom: 
