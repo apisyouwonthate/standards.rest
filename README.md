@@ -1,4 +1,4 @@
-# Standards.REST
+# Standards.REST [![](https://img.shields.io/badge/Buy%20us%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://offset.earth/philsturgeon)
 
 A collection of standards, specifications, etc. for HTTP API development.
 
