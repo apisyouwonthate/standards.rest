@@ -36,7 +36,7 @@
     name: Internet Engineering Task Force
     short: IETF
 - title: HAL
-  URL: http://stateless.co/hal_specification.html
+  id: http://stateless.co/hal_specification.html
   abstract: HAL is a simple format that gives a consistent and easy way to hyperlink
     between resources in your API.
 - id: http://webconcepts.info/specs/IETF/RFC/8246
@@ -95,7 +95,7 @@
     name: Internet Engineering Task Force
     short: IETF
 - title: Hydra
-  URL: https://www.hydra-cg.com/spec/latest/core
+  id: https://www.hydra-cg.com/spec/latest/core
   name: Hydra Core Vocabulary
   abstract: Hydra is a lightweight vocabulary to create hypermedia-driven Web APIs.
 - id: http://webconcepts.info/specs/IETF/RFC/7235
@@ -383,7 +383,7 @@
     name: Internet Engineering Task Force
     short: IETF
 - title: JSON:API
-  URL: https://jsonapi.org/
+  id: https://jsonapi.org/
   abstract: If you’ve ever argued with your team about the way your JSON responses
     should be formatted, JSON:API can be your anti-bikeshedding tool.
 - id: http://webconcepts.info/specs/IETF/RFC/6902
@@ -418,7 +418,7 @@
     name: Internet Engineering Task Force
     short: IETF
 - title: 'Metalink/HTTP: Mirrors and Hashes'
-  URL: https://tools.ietf.org/html/rfc6249
+  id: https://tools.ietf.org/html/rfc6249
   name: RFC 6249
   abstract: This document proposes a service health check response format for HTTP
     APIs.
@@ -493,7 +493,7 @@
     name: Internet Engineering Task Force
     short: IETF
 - title: Siren
-  URL: https://github.com/kevinswiber/siren
+  id: https://github.com/kevinswiber/siren
   abstract: A hypermedia specification for representing entities.
 - id: http://webconcepts.info/specs/IETF/RFC/7644
   title: 'System for Cross-domain Identity Management: Protocol'
