@@ -604,11 +604,11 @@
     id: http://webconcepts.info/specs/IETF/
     name: Internet Engineering Task Force
     short: IETF
-- id: http://webconcepts.info/specs/IETF/I-D/wilde-sunset-header
+- id: http://webconcepts.info/specs/IETF/RFC/8594
   title: The Sunset HTTP Header Field
-  name: Internet Draft wilde-sunset-header
-  URI: urn:ietf:id:wilde-sunset-header
-  URL: http://tools.ietf.org/html/draft-wilde-sunset-header
+  name: RFC 8594
+  URI: urn:ietf:rfc:8594
+  URL: http://tools.ietf.org/html/rfc8594
   abstract: This specification defines the Sunset HTTP response header field, which
     indicates that a URI is likely to become unresponsive at a specified point in
     the future. It also defines a sunset link relation type that allows linking to
